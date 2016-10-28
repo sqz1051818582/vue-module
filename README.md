@@ -26,11 +26,12 @@ npm test
 #更新日志
 
 > 启动报错：
-  1.Babel的配置文件是.babelrc，存放在项目的根目录下。使用Babel的第一步，就是配置这个文件。该文件用来设置转码规则和插件，基本格式如下。
+
+  a.Babel的配置文件是.babelrc，存放在项目的根目录下。使用Babel的第一步，就是配置这个文件。该文件用来设置转码规则和插件，基本格式如下。
   {
     "presets": [],
     "plugins": []
   }
-  2. npm加载 $ npm install --save-dev babel-preset-es2015
-  3. 全局安装：$ npm install --global babel-cli
+  b. npm加载 $ npm install --save-dev babel-preset-es2015
+  c. 全局安装：$ npm install --global babel-cli
 
