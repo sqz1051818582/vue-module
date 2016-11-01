@@ -1,27 +1,31 @@
+import Vue from 'vue'
 import App from './App'
-//定义引用vue-router
-import Vue from 'vue';
-import Index from './index';
-import VueRouter from 'vue-router';
-//实例调用
-Vue.use(VueRouter);
-//引入组件页面
-import Hello from './components/hello';
+import VueResource from 'vue-resource'
+import VueRouter from "vue-router"
+import secondcomponent from './components/secondcomponent.vue'
 //开启debug模式
 Vue.config.debug = true;
-// 路由器需要一个根组件。
-var Apps = Vue.extend({});
+//实例引用
+Vue.use(VueRouter);
+Vue.use(VueResource);
+
+const Foo = { template: '<div>foo</div>' }
+const Bar = { template: '<div>bar</div>' }
+const routes = [
+  { path: '/foo', component: Foo },
+  { path: '/bar', component: Bar },
+  { path: '/', redirect: '/secondcomponent' },
+  { path: '/secondcomponent', component: secondcomponent }
+]
 // 创建一个路由器实例
-var router = new VueRouter();
-router.map({//定义路由映射
-    '/index':{//访问地址
-        name:'index',//定义路由的名字。方便使用。
-        component:Index,//引用的组件名称，对应上面使用`import`导入的组件
-        //component:require("components/app.vue")//还可以直接使用这样的方式也是没问题的。不过会没有import集中引入那么直观
-    },
-    '/hello': {
-        name:'hello',
-        component: Hello
-    },
-});
-router.start(App, '#app');
+// 并且配置路由规则
+const router = new VueRouter({
+  mode: 'history',
+  base: __dirname,
+  routes:routes
+})
+// 路由器会创建一个 App 实例，并且挂载到选择符 #app 匹配的元素上。
+const app = new Vue({
+  router: router,
+  render: h => h(App)
+}).$mount('#app')

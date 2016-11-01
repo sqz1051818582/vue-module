@@ -1,6 +1,6 @@
-# Vuedemo
+# demo
 
-> 中期工作汇报报告
+> vue-demo
 
 ## Build Setup
 
@@ -13,27 +13,6 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
-#更新日志
 
-> 启动报错：
-
-  #.Babel的配置文件是.babelrc，存放在项目的根目录下。使用Babel的第一步，就是配置这个文件。该文件用来设置转码规则和插件，基本格式如下。
-  {
-    "presets": [],
-    "plugins": []
-  }
-  
-  #. npm加载 $ npm install --save-dev babel-preset-es2015
-  
-  #. 全局安装：$ npm install --global babel-cli
-
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
