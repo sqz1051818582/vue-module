@@ -1,36 +1,41 @@
+<!-- 主页通用模块 -->
 <template>
-  <div id="app">
-    <router-view>
-    <img src="./assets/logo.png">
-    <!-- <hello></hello> -->
-    <maqunDemo></maqunDemo>
-    <router-link to="/foo">Go to Foo</router-link>
-    <router-link to="/bar">Go to Bar</router-link>
-    <router-link to="/secondcomponent">Go to Bar3</router-link>
-    <!-- 路由出口 -->
-    <!-- 路由匹配到的组件将渲染在这里 -->
-    </router-view>
-  </div>
+    <div class="body">
+      <!-- 通用头部 -->
+      <div class="head">
+      </div>
+      <div class="content">
+        <el-row>
+          <el-col :span="4">
+            <div class="grid-content bg-purple border">
+            </div>
+          </el-col>
+          <el-col :span="20">
+            <div class="grid-content bg-purple-light" id="app">
+              <!-- 路由匹配到的组件将渲染在这里 -->
+              <router-view></router-view>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+    </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-import maqunDemo from './components/maqunDemo.vue';
 export default {
-  name: 'app',
-  components: {
-    Hello,
-    maqunDemo
-  }
+  name: 'app'
 }
 </script>
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{ 
+    margin:0;
+    padding: 0;
+}
+.head{
+    height: 240px;
+    background-color: rgb(6, 217, 149);
+}
+.border{
+  border:1px solid red;
 }
 </style>

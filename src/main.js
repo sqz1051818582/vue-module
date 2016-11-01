@@ -2,20 +2,19 @@ import Vue from 'vue'
 import App from './App'
 import VueResource from 'vue-resource'
 import VueRouter from "vue-router"
-import secondcomponent from './components/secondcomponent.vue'
+import Index from './components/index.vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 //开启debug模式
 Vue.config.debug = true;
 //实例引用
 Vue.use(VueRouter);
 Vue.use(VueResource);
-
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+Vue.use(ElementUI);
+console.log(ElementUI);
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar },
-  { path: '/', redirect: '/secondcomponent' },
-  { path: '/secondcomponent', component: secondcomponent }
+  { path: '/', redirect: '/Index' },
+  { path: '/Index', component: Index }
 ]
 // 创建一个路由器实例
 // 并且配置路由规则
