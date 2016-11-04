@@ -13,6 +13,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 var router = new VueRouter({
   mode: 'history',
+  history: false,
   base: __dirname
 })
 // 路由映射关系
