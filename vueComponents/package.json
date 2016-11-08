@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
+    "api": "aglio --theme-full-width --theme-variables flatly  -i api/api.md -o api/api.html",
+    "mock": "drakov -f api/api.md --watch -s /server -p 4000",
     "test": ""
   },
   "dependencies": {
