@@ -45,7 +45,7 @@ router.map({
                 component:step4
             },
             '/step5':{
-                name:'11',
+                name:'step5',
                 component:step5
             }
         }
