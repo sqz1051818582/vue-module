@@ -1,16 +1,14 @@
 import Vue from 'vue'
 import App from './App'
+import N3Components from 'N3-components'
 import Index from './components/index'
-import Page1 from './components/page1'
-import step1 from './components/step1'
-import step2 from './components/step2'
-import step3 from './components/step3'
-import step4 from './components/step4'
-import step5 from './components/step5'
+import Imitate from './components/imitate'
+import Panel from './components/panel'
 //导入vue-router
 import VueRouter from 'vue-router'
 //引用实例
 Vue.use(VueRouter)
+Vue.use(N3Components)
 var router = new VueRouter({
   mode: 'history',
   base: __dirname
@@ -20,33 +18,16 @@ router.map({
     //默认指向index
     '/':{
         name:'index',
-        component:Index
-    },
-    '/page1':{
-        name:'page1',
-        component:Page1,
-        //子路由(有页底)
+        component:Index,
         subRoutes:{
-            '/step1':{
-                name:'step1',
-                component:step1
-            },
-            '/step2':{
-                name:'step2',
-                component:step2
-            },
-            '/step3':{
-                name:'step3',
-                component:step3
-            },
-            '/step4':{
-                name:'step4',
-                component:step4
-            },
-            '/step5':{
-                name:'step5',
-                component:step5
-            }
+          '/Panel':{
+            name:'Panel',
+            component: Panel
+          },
+          '/Imitate':{
+            name:'Imitate',
+            component: Imitate
+          }
         }
     }
 })
