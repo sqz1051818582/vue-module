@@ -1,7 +1,7 @@
 <template>
     <div class="vTitle">
         <h1>从前端到放弃</h1>
-        <h1>从懵逼到完全懵逼</h1>
+        <h1>vue + webpack 入门篇</h1>
         <a v-link="{path:'./page1/step1'}">
           <!-- 内部引用button 按钮 -->
           <i-button type="primary" size="large" class="vbutton">

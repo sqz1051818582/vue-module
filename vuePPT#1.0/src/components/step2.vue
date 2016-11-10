@@ -1,14 +1,11 @@
 <template>
     <div class="part2">
-      <p>
-        iview + N3-components
-      </p>
-      <a href="https://www.iviewui.com/" target="_blank">官网：https://www.iviewui.com</a>
+      <a href="https://www.iviewui.com/" target="_blank">iview</a> +
+      <a href="https://n3-components.github.io/N3-components/" target="_blank">N3-components</a> +
+      <a href="http://element.eleme.io/" target="_blank">element</a>
     </div>
     <div class="imgContent">
-      <img src="../assets/2.png" width="25%" height="400"/>
-      <img src="../assets/3.png" width="25%" height="400"/>
-      <img src="../assets/4.png" width="25%" height="200"/>
+      <img src="../assets/22.png" width="90%" height="400"/>
     </div>
 </template>
 <script>
@@ -18,15 +15,13 @@ export default {
 }
 </script>
 <style>
-.part2 p{
-  font-size: 30px;
-  font-weight: 900;
+.part2{
   text-align: center;
-  margin-top: 8%;
 }
 .part2 a{
+  margin-top: 8%;
   font-size: 25px;
-  display: block;
+  display: inline-block;
   text-align: center;
 }
 .imgContent img{

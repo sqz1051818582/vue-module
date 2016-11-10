@@ -3,12 +3,29 @@
     <p>
       Mock.js 简介
     </p>
-    <a href="http://mockjs.com/" target="_blank">官方 — API文档</a>
+    <Collapse accordion>
+        <Panel key="1">
+            mock
+            <div slot="content" class="model"><a href="http://mockjs.com/" target="_black"> API文档</a></div>
+        </Panel>
+        <Panel key="2">
+            Markdown
+            <div slot="content" class="model">Markdown编辑器</div>
+        </Panel>
+        <Panel key="3">
+            mock-server (  json-server  ) ---drakov
+        </Panel>
+        <Panel key="4">
+            aglio
+        </Panel>
+    </Collapse>
   </div>
 </template>
 <script>
+import  { Collapse , Panel }  from 'iview';
 export default {
-  name: 'step5'
+  name: 'step5',
+  components :{ Collapse , Panel }
 }
 </script>
 <style>
