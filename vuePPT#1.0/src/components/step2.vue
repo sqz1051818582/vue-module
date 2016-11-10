@@ -1,7 +1,7 @@
 <template>
     <div class="part2">
       <p>
-        iview 组件库
+        iview + N3-components
       </p>
       <a href="https://www.iviewui.com/" target="_blank">官网：https://www.iviewui.com</a>
     </div>

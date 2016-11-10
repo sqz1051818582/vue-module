@@ -27,7 +27,7 @@
         </i-col>
         <!-- part2 -->
         <i-col span="18">
-            <div class="StepContent">
+            <div class="StepContent" :style="{ height: Height_ }">
                 <router-view></router-view>
             </div>
         </i-col>
@@ -38,7 +38,8 @@
     export default {
         data () {
             return {
-                dataNum: 0
+                dataNum: 0,
+                Height_: '600px'
             }
         },
         components: { Row, iCol,Steps, Step },
@@ -46,6 +47,10 @@
           resetNum (num) {
             this.dataNum = num
           }
+        },
+        ready () {
+          var getHeight = document.body.clientHeight;
+          this.Height_ = getHeight + 'px';
         }
     }
 </script>
@@ -86,7 +91,7 @@
   }
   .StepContent{
     border: 1px solid #fff;
-    height: 600px;
+    height: auto;
     margin-top: 5%;
     margin-right: 8%;
     background: #fff;

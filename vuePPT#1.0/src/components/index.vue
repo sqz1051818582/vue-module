@@ -1,7 +1,7 @@
 <template>
     <div class="vTitle">
-        <h1>Web前后端分离蓝图</h1>
-        <h2>（ Vue.Js + webpack ）</h2>
+        <h1>从前端到放弃</h1>
+        <h1>从懵逼到完全懵逼</h1>
         <a v-link="{path:'./page1/step1'}">
           <!-- 内部引用button 按钮 -->
           <i-button type="primary" size="large" class="vbutton">
@@ -26,8 +26,8 @@
 }
 .vbutton{
   margin-top: 20px;
-  background-color: #4bd083;
-  border-color: #4bd083;
+  background-color: #0099e5;
+  border-color: #0099e5;
   font-weight: bold;
 }
 .ma-l10{
