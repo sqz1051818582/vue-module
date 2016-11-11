@@ -18,6 +18,12 @@
         <Panel key="4">
             aglio
         </Panel>
+        <Panel key="5">
+            感言(听听大神怎么看Vue的发展)
+            <div slot="content" class="model">
+              <a href="https://segmentfault.com/a/1190000007297553">点击查看</a>
+            </div>
+        </Panel>
     </Collapse>
   </div>
 </template>

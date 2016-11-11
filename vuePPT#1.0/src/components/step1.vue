@@ -34,6 +34,10 @@
                   知识拓展CNPM
                   <div slot="content" class="model"><span>$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span></div>
               </Panel>
+              <Panel key="5">
+                  Vue学习官网
+                  <div slot="content" class="model"><a href="https://cn.vuejs.org/s">点击查看</a></div>
+              </Panel>
           </Collapse>
         </i-col>
     </Row>
